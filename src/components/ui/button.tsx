@@ -17,9 +17,9 @@ export function Button({
       className={twMerge(
         'rounded-lg px-[0.875rem] py-[0.625rem] text-sm leading-none transition',
         variant === 'primary' &&
-          'bg-button-primary hover:bg-button-primary-hover text-primary-black',
+          'bg-button-primary text-primary-black hover:bg-button-primary-hover',
         variant === 'default' &&
-          'bg-button-default hover:bg-button-default-hover text-white',
+          'bg-button-default text-white hover:bg-button-default-hover',
         variant === 'ghost' && 'border border-white text-white',
         className,
       )}
