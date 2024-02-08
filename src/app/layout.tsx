@@ -27,10 +27,7 @@ export default function RootLayout({
           <div className="flex min-h-screen flex-col items-center justify-center bg-[#010C15] p-4">
             <div className="scrollbar-styled relative flex max-h-[850px] w-full max-w-[1440px] flex-1 flex-col justify-between overflow-hidden overflow-y-auto rounded-lg border border-[#1E2D3D] bg-primary-dark-blue">
               <Header />
-              <div className="flex flex-1 flex-col">
-                <MenuMobile />
-                {children}
-              </div>
+              <div className="flex flex-1 flex-col">{children}</div>
 
               <Footer />
             </div>

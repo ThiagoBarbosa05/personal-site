@@ -31,7 +31,7 @@ export function AboutNavigation() {
           <AccordionTriggerNavigation>personal-info</AccordionTriggerNavigation>
         </Header>
 
-        <Content className="data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden">
+        <Content className="overflow-hidden data-[state=closed]:animate-slideUp data-[state=open]:animate-slideDown">
           <ul className="flex flex-col gap-1 pb-4 pl-14 pt-4">
             {navLinks.map((navLink) => {
               return (
@@ -60,7 +60,7 @@ export function AboutNavigation() {
           </AccordionTriggerNavigation>
         </Header>
 
-        <Content className="data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden">
+        <Content className="overflow-hidden data-[state=closed]:animate-slideUp data-[state=open]:animate-slideDown">
           <ul className="flex flex-col gap-1 pb-4 pl-7 pt-4">
             <li className="flex items-center gap-3">
               <ChevronRight width={16} className="text-secondary-slate-grey" />
@@ -113,7 +113,7 @@ export function AboutNavigation() {
           <AccordionTriggerNavigation>hobbies</AccordionTriggerNavigation>
         </Header>
 
-        <Content className="data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden">
+        <Content className="overflow-hidden data-[state=closed]:animate-slideUp data-[state=open]:animate-slideDown">
           <ul className="flex flex-col gap-1 pl-7 pt-4">
             <li className="flex items-center gap-3">
               <ChevronRight width={16} className="text-secondary-slate-grey" />
