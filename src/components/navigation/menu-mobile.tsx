@@ -10,7 +10,7 @@ import { ToggleMenuMobile } from '@/contexts/toggle-menu-mobile'
 const navLinks = [
   {
     name: '_hello',
-    href: '/',
+    href: '/hello',
   },
   {
     name: '_about-me',
@@ -45,7 +45,7 @@ export function MenuMobile() {
                 key={navLink.name}
                 className={twMerge(
                   'relative border border-[#1E2D3D] text-center',
-                  pathname === navLink.href &&
+                  pathname.startsWith(navLink.href) &&
                     'after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[3px] after:bg-accent-sand',
                 )}
               >
